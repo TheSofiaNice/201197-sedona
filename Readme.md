@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Елена Гумерова](https://up.htmlacademy.ru/htmlcss/16/user/201197).
-* Наставник: `Неизвестно`.
+* Студент: [Elena Gumerova](https://up.htmlacademy.ru/htmlcss/16/user/201197).
+* Наставник: [Гоша Егорян](https://up.htmlacademy.ru/htmlcss/16/user/85633).
 
 ---
 
