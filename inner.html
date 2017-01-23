@@ -5,8 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <!--   <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
--->
+
     <header class="main-header">
       <a href="index.html">
         <img src="http://placehold.it/150x100" alt="Главная">
@@ -31,8 +30,8 @@
 
     </header>
     <main>
-      <div class="">
-        <form action="#" method="post" oninput="priceval.value=price.value">
+      <div class="filters">
+        <form action="#" method="post">
           <fieldset>
             <legend> Инфраструктура </legend>
             <label>
@@ -57,30 +56,30 @@
               <input type="checkbox" name="apartments" value="apartments" checked> Апартаменты
             </label>
           </fieldset>
-          <div class="rangeprice">
-            <label for="price"> Стоимость в сутки (р): </label>
-            от 0 до  <output name="priceval">3000</output>
-            <input type="range" id="price" name="price" min="0" max="4000" step="100">
-            <input type="button" value="Показать">
-          </div>
         </form>
+          <div class="rangeprice">
+            <div class="rangerprice-label"> Стоимость в сутки </div>
+            <div class="rangerprice-min"> от 0 </div> <div class="rangerprice-max"> до  3000 </div>
+            <div class="rangerprice-controls"> </div>
+            <a class="show-btn" href="#"> Показать </a>
+          </div>
+
       </div>
-      <div class="filters">
-        Найдено: 3 Сортировка
-        <input type="button" value="По цене">
-        <input type="button" value="По типу">
-        <input type="button" value="По рейтингу">
-        <input type="button" value="ASC">
-        <input type="button" value="DESC">
+      <div class="sortings">
+        <div class="search-amount"> Найдено: 3 </div>
+        <div class="sortings-title"> Сортировка </div>
+        <a class="sortings-btn" href="#"> По цене </a>
+        <a class="sortings-btn" href="#"> По типу </a>
+        <a class="sortings-btn" href="#"> По рейтингу </a>
+        <a class="sort-btn asc" href="#"> ASC </a>
+        <a class="sort-btn desc" href="#"> DESC </a>
       </div>
       <div class="search-results">
         <article class="hotels">
-          <div class="hotels-photo">
-            <img src="http://placehold.it/150x100" alt="Amara resort & spa">
-          </div>
+          <img src="http://placehold.it/150x100" alt="Amara resort &amp; spa">
           <div class="hotels-details">
             <p class="hotels-name">
-              Amara resort & spa
+              Amara resort &amp; spa
             </p>
             <p class="hotels-type">
               Гостиница
@@ -92,14 +91,14 @@
             <a class="book-btn" href="#"> Забронировать </a>
           </div>
           <div class="hotels-rating">
+            <div class="hotels-stars amara-stars">
+            </div>
             <p class="rating-value"> Рейтинг: 8,5
             </p>
           </div>
         </article>
         <article class="hotels">
-          <div class="hotels-photo">
-            <img src="http://placehold.it/150x100" alt="Desert quail inn">
-          </div>
+          <img src="http://placehold.it/150x100" alt="Desert quail inn">
           <div class="hotels-details">
             <p class="hotels-name">
               Desert quail inn
@@ -114,14 +113,14 @@
             <a class="book-btn" href="#"> Забронировать </a>
           </div>
           <div class="hotels-rating">
+            <div class="hotels-stars desert-stars">
+            </div>
             <p class="rating-value"> Рейтинг: 8,9
             </p>
           </div>
         </article>
         <article class="hotels">
-          <div class="hotels-photo">
-            <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
-          </div>
+          <img src="http://placehold.it/150x100" alt="Villas at poco diablo">
           <div class="hotels-details">
             <p class="hotels-name">
               Villas at poco diablo
@@ -136,6 +135,8 @@
             <a class="book-btn" href="#"> Забронировать </a>
           </div>
           <div class="hotels-rating">
+            <div class="hotels-stars villas-stars">
+            </div>
             <p class="rating-value"> Рейтинг: 9,2
             </p>
           </div>

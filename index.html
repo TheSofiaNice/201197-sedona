@@ -5,8 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <!--   <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
--->
+
     <header class="main-header">
       <a href="index.html">
         <img src="http://placehold.it/150x100" alt="Главная">
@@ -47,14 +46,20 @@
       </div>
       <section class="features">
         <div class="feautures-item">
+          <span class="pic pic-house">
+          </span>
           <b class="feautures-name"> Жилье </b>
           <p class="features-description"> Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
         </div>
         <div class="feautures-item">
+          <span class="pic pic-burger">
+          </span>
           <b class="feautures-name"> Еда </b>
           <p class="features-description"> Всегда заказывайте фирменный бургер, вы не разочаруетесь! </p>
         </div>
         <div class="feautures-item">
+          <span class="pic pic-gift">
+          </span>
           <b class="feautures-name"> Сувениры </b>
           <p class="features-description"> Не только китайского, но и местного производства </p>
         </div>
@@ -99,11 +104,11 @@
          </label>
          <label for="adults"> Взрослые </label>
           <input type="button" value="-">
-          <input type="number" id="adults" name="adults" placeholder="2">
+          <input type="number" id="adults" name="adults" placeholder="2" step="1">
           <input type="button" value="+">
          <label for="childs"> Дети </label>
           <input type="button" value="-">
-          <input type="number" id="childs" name="childs" placeholder="0">
+          <input type="number" id="childs" name="childs" placeholder="0" step="1">
           <input type="button" value="+">
         </form>
       </div>
