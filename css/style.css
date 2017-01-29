@@ -1,0 +1,22 @@
+body {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: normal;
+  font-family: "PT Sans", "Arial", serif;
+  text-transform: uppercase;
+}
+h2.reasons-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", serif;
+}
+h2.hotels-name {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", serif;
+}
