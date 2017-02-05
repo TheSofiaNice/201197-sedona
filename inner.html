@@ -31,9 +31,9 @@
 
     </header>
     <main>
-      <div class="filters">
+      <div class="filters clearfix">
         <form action="#" method="post">
-          <fieldset>
+          <fieldset class="infrastructure">
             <legend> Инфраструктура </legend>
             <label>
               <input type="checkbox" name="pool" value="pool" checked> Бассейн
@@ -45,7 +45,7 @@
               <input type="checkbox" name="wi-fi" value="wi-fi" > Wi-fi
             </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="housing">
             <legend> Тип жилья </legend>
             <label>
               <input type="checkbox" name="hotel" value="hotel" checked> Гостиница
@@ -57,7 +57,7 @@
               <input type="checkbox" name="apartments" value="apartments" checked> Апартаменты
             </label>
           </fieldset>
-          <div class="rangeprice">
+          <div class="rangerprice">
             <div class="rangerprice-label"> Стоимость в сутки </div>
             <div class="rangerprice-min"> от 0 </div> <div class="rangerprice-max"> до  3000 </div>
             <div class="rangerprice-controls"> </div>
@@ -65,28 +65,33 @@
           </div>
         </form>
       </div>
-      <div class="sortings">
+      <div class="sortings clearfix">
         <div class="search-amount"> Найдено: 3 </div>
-        <div class="sortings-title"> Сортировка </div>
-        <a class="sortings-btn" href="#"> По цене </a>
-        <a class="sortings-btn" href="#"> По типу </a>
-        <a class="sortings-btn" href="#"> По рейтингу </a>
-        <a class="sort-btn asc" href="#"> ASC </a>
-        <a class="sort-btn desc" href="#"> DESC </a>
+        <div class="sortings-btns"> Сортировка
+          <a class="sortings-btn" href="#"> По цене </a>
+          <a class="sortings-btn" href="#"> По типу </a>
+          <a class="sortings-btn" href="#"> По рейтингу </a>
+        </div>
+        <div class="sortings-asc-dsc">
+          <a class="sort-btn asc" href="#"> ASC </a>
+          <a class="sort-btn desc" href="#"> DESC </a>
+        </div>
       </div>
       <div class="search-results">
-        <article class="hotels">
-          <img src="img/amara.jpg" alt="Amara resort &amp; spa">
+        <article class="hotels clearfix">
+          <div class="hotels-img">
+             <img src="img/amara.jpg" alt="Amara resort &amp; spa">
+          </div>
           <div class="hotels-details">
             <h2 class="hotels-name">
               Amara resort &amp; spa
             </h2>
-            <p class="hotels-type">
+            <span class="hotels-type">
               Гостиница
-            </p>
-            <p class="hotels-price">
+            </span>
+            <span class="hotels-price">
               от 4000 р.
-            </p>
+            </span>
             <a class="info-btn" href="#"> Подробнее </a>
             <a class="book-btn" href="#"> Забронировать </a>
           </div>
@@ -97,18 +102,20 @@
             </p>
           </div>
         </article>
-        <article class="hotels">
-          <img src="img/desert.jpg" alt="Desert quail inn">
+        <article class="hotels clearfix">
+          <div class="hotels-img">
+            <img src="img/desert.jpg" alt="Desert quail inn">
+          </div>
           <div class="hotels-details">
             <h2 class="hotels-name">
               Desert quail inn
             </h2>
-            <p class="hotels-type">
+            <span class="hotels-type">
               Мотель
-            </p>
-            <p class="hotels-price">
+            </span>
+            <span class="hotels-price">
               от 3000 р.
-            </p>
+            </span>
             <a class="info-btn" href="#"> Подробнее </a>
             <a class="book-btn" href="#"> Забронировать </a>
           </div>
@@ -119,18 +126,20 @@
             </p>
           </div>
         </article>
-        <article class="hotels">
-          <img src="img/villas.jpg" alt="Villas at poco diablo">
+        <article class="hotels clearfix">
+          <div class="hotels-img">
+            <img src="img/villas.jpg" alt="Villas at poco diablo">
+          </div>
           <div class="hotels-details">
             <h2 class="hotels-name">
               Villas at poco diablo
             </h2>
-            <p class="hotels-type">
+            <span class="hotels-type">
               Апартаменты
-            </p>
-            <p class="hotels-price">
+            </span>
+            <span class="hotels-price">
               от 2000 р.
-            </p>
+            </span>
             <a class="info-btn" href="#"> Подробнее </a>
             <a class="book-btn" href="#"> Забронировать </a>
           </div>
@@ -144,7 +153,7 @@
       </div>
     </main>
     <footer class="main-footer">
-     <div class="container">
+     <div class="container clearfix">
        <section class="footer-hashtag">
          <a href="#">#VISITSEDONA</a>
         </section>
@@ -154,7 +163,7 @@
          <a class="social-btn social-btn-yt" href="#">Youtube</a>
        </section>
        <section class="footer-copyright">
-         <p>Website by</p>
+         <span>Website by</span>
          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
        </section>
      </div>
