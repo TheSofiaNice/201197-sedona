@@ -272,6 +272,7 @@ p.promo {
   font-weight: bold;
   color: #000000;
   display: inline-block;
+
   width: 108px;
 }
 .form-field input[type="text"] {
@@ -287,41 +288,66 @@ p.promo {
   text-transform: uppercase;
 }
 .amount-field {
-  width: 96px;
+  width: 114px;
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+
   background-color: #f2f2f2;
   margin-bottom: 30px;
+
 }
-.amount-field input[type="number"] {
-  width: 55px;
+
+.amount-field input[type="text"] {
+  display: inline-block;
+  width: 40px;
   background: none;
-  border: none;
+  border: 1px solid black;
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans", "Arial", serif;
   text-transform: uppercase;
+
+
 }
-.amount-field input[type="button"] {
-  background: none;
-  font-size: 0px;
+
+.amount-field button {
+display: inline-block;
+width: 37px;
+height: 38px;
+font-size: 0;
+position: relative;
+margin-right: 0;
+}
+
+.amount-field button::before {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-image: url("../img/sprite3.png");
+background-repeat: no-repeat;
+font-size: 0px;
+
+
+}
+
+.amount-field button.minus::before{
+
   width: 12px;
   height: 3px;
-  background: url("../img/sprite3.png") no-repeat;
   background-position: -10px -111px;
 
 }
-.amount-field input[type="button"].plus {
+.amount-field button.plus::before {
   width: 11px;
   height: 11px;
-  background: url("../img/sprite3.png") no-repeat;
   background-position: -106px -111px;
 }
+
+
 .calendar  {
   background: none;
   width: 21px;
@@ -401,10 +427,60 @@ p.promo {
   width: 561px;
   padding-left: 31px;
 }
+
+h2.hotels-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.hotels-name a {
+  text-decoration: none;
+}
+.hotels-type-price {
+margin-bottom: 10px;
+}
+.hotels-type {
+  display: inline-block;
+  width: 110px;
+  margin-right: 6px;
+}
 .hotels-rating {
   float: right;
   width: 240px;
+  height: 89px;
+  position: relative;
   text-align: right;
+}
+.hotels-stars {
+  background: url("../img/star.png");
+  position: absolute;
+  right: 0px;
+}
+.rating-value {
+  position: absolute;
+  top: 65px;
+  right: 0px;
+  background-color: #f2f2f2;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+.amara-stars {
+  width: 96px;
+  height: 17px;
+
+}
+.desert-stars {
+  width: 72px;
+  height: 17px;
+
+}
+.villas-stars {
+  width: 48px;
+  height: 17px;
 
 }
 .info-btn {
@@ -434,56 +510,12 @@ p.promo {
   margin-right: 6px;
 }
 
-h2.hotels-name {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-  font-weight: bold;
-  font-family: "PT Sans", "Arial", serif;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.hotels-name a {
-  text-decoration: none;
-}
-.hotels-type-price {
-margin-bottom: 10px;
-}
-.hotels-type {
-  display: inline-block;
-  width: 110px;
-  margin-right: 6px;
-}
-.hotels-stars {
 
-  background: url("../img/sprite3.png") repeat-x;
-  margin-bottom: 45px;
-  
-}
-.amara-stars {
-  width: 96px;
-  height: 17px;
-  background-position: -296px -111px;
-}
-.desert-stars {
-  width: 72px;
-  height: 17px;
-  background-position: -296px -111px;
-}
-.villas-stars {
-  width: 48px;
-  height: 17px;
-  background-position: -296px -111px;
-}
-.rating-value {
-
-}
 .main-footer {
   width: 1200px;
   min-height: 120px;
   margin-left: auto;
   margin-right: auto;
-
 }
 .main-footer .container {
     padding: 36px 72px;
@@ -510,25 +542,40 @@ margin-bottom: 10px;
 }
 .social-btn {
   display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
   width: 46px;
   height: 49px;
-  margin-right: 6px;
   font-size: 0;
-  vertical-align: top;
-  text-decoration: none;
-  background: #81b3d2 url("../img/sprite3.png") no-repeat center;
+  background-color: #81b3d2;
+  position: relative;
 }
-.social-btn-tw {
+
+
+.social-btn::before {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-image: url("../img/sprite3.png");
+background-repeat: no-repeat;
+
+
+}
+.social-btn-tw::before {
 width: 17px;
 height: 15px;
 background-position: -340px -111px;
+
+
 }
-.social-btn-fb {
+.social-btn-fb::before  {
 width: 10px;
 height: 19px;
 background-position: -10px -52px;
 }
-.social-btn-yt {
+.social-btn-yt::before {
 width: 20px;
 height: 16px;
 background-position: -340px -146px;
@@ -536,6 +583,7 @@ background-position: -340px -146px;
 .footer-copyright {
   float: right;
   width: 240px;
+  position: relative;
 }
 .footer-copyright span {
   display: inline-block;
@@ -545,8 +593,12 @@ background-position: -340px -146px;
   padding-left: 15px;
   padding-right: 5px;
   padding-top: 10px;
-}
+  }
 .footer-copyright a {
+  display: inline-block;
+  position: absolute;
+  left: 96px;
+  top: 5px;
   font-size: 0;
   width: 113px;
   height: 39px;
