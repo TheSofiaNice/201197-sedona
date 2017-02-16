@@ -37,32 +37,35 @@
         <form action="#" method="post">
           <fieldset class="infrastructure">
             <legend> Инфраструктура </legend>
-            <label>
-              <input type="checkbox" name="pool" value="pool" checked> Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="parking" value="parking" > Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="wi-fi" value="wi-fi" > Wi-fi
-            </label>
+            <input type="checkbox" name="pool" value="pool" id="pool" checked>
+            <label for="pool"> Бассейн  </label>
+            <input type="checkbox" name="parking" value="parking" id="parking" >
+            <label for="parking"> Парковка  </label>
+            <input type="checkbox" name="wi-fi" value="wi-fi" id="wi-fi">
+            <label for="wi-fi"> Wi-fi  </label>
           </fieldset>
           <fieldset class="housing">
             <legend> Тип жилья </legend>
-            <label>
-              <input type="checkbox" name="hotel" value="hotel" checked> Гостиница
-            </label>
-            <label>
-              <input type="checkbox" name="motel" value="motel" checked> Мотель
-            </label>
-            <label>
-              <input type="checkbox" name="apartments" value="apartments" checked> Апартаменты
-            </label>
+            <input type="checkbox" name="hotel" value="hotel" id="hotel" checked>
+            <label for="hotel"> Гостиница  </label>
+            <input type="checkbox" name="motel" value="motel" id="motel" checked>
+            <label for="motel"> Мотель </label>
+            <input type="checkbox" name="apartments" value="apartments" id="apartments" checked>
+            <label for"apartments"> Апартаменты </label>
           </fieldset>
           <div class="rangerprice">
-            <div class="rangerprice-label"> Стоимость в сутки </div>
-            <div class="rangerprice-min"> от 0 </div> <div class="rangerprice-max"> до  3000 </div>
-            <div class="rangerprice-controls"> </div>
+            <div class="rangerprice-label"> Стоимость в сутки (р)</div>
+            <div class="rangerprice-value">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="rangerprice-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
             <a class="show-btn" href="#"> Показать </a>
           </div>
         </form>
