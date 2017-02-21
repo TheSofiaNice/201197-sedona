@@ -153,14 +153,17 @@ h2.reasons-name {
 .reasons-number {
   margin-bottom: 20px;
 }
-b.feautures-name {
+.feautures-name {
   display: inline-block;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
+}
+b.gift {
+  margin-bottom: 10px;
 }
 .features-description {
   text-align: center;
@@ -211,11 +214,15 @@ b.feautures-name {
   width: 75px;
   height: 72px;
   background-position: -10px -148px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 .pic-burger {
   width: 74px;
   height: 70px;
   background-position: -41px -10px;
+  margin-top: 62px;
+
 }
 .pic-gift {
   width: 64px;
@@ -287,7 +294,7 @@ p.promo {
   text-align: center;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 .search-btn:hover {
   background-color: #669ec0;
@@ -297,10 +304,10 @@ p.promo {
   color: rgba(255, 255, 255, 0.3);
 }
 .form-field {
-  width: 326px;
+  width: 331px;
   display: inline-block;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 5px;
   padding-top: 7px;
   padding-bottom: 7px;
   background-color: #f2f2f2;
@@ -314,15 +321,20 @@ p.promo {
   color: #000000;
   display: inline-block;
   width: 108px;
+  vertical-align: middle;
 }
 .search-hotel label.childs {
   width: 60px;
+  padding-top: 2px;
+}
+.search-hotel label.childs {
+  padding-top: 2px;
 }
 .adults {
   margin-right: 50px;
 }
 .form-field input[type="text"] {
-  width: 280px;
+  width: 290px;
   background: none;
   border: none;
   font-size: 14px;
@@ -348,12 +360,13 @@ p.promo {
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: #f2f2f2;
-  margin-bottom: 30px;
+  margin-top: 5px;
   position: relative;
   font-size: 0;
 }
 .amount-field input[type="text"] {
   display: inline-block;
+  vertical-align: middle;
   width: 50px;
   background: none;
   border: none;
@@ -367,15 +380,27 @@ p.promo {
 }
 .amount-field button {
   display: inline-block;
+  vertical-align: middle;
   border: none;
   width: 20px;
   height: 20px;
   font-size: 0;
   position: relative;
-  top: 5px;
   margin-right: 0;
-  background-image: url("../img/sprite3.png");
-  background-repeat: no-repeat;
+  background-color: transparent;
+  font-size: 0px;
+}
+.amount-field button.plus {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  position: relative;
+  left: 3px;
+  margin-right: 0;
+  background-color: transparent;
   font-size: 0px;
 }
 
@@ -409,6 +434,7 @@ p.promo {
   width: 11px;
   height: 11px;
   background-position: -106px -111px;
+
 }
 .amount-field button.plus:hover:before {
   background-position: -265px -111px;
@@ -421,14 +447,17 @@ p.promo {
   width: 25px;
   height: 25px;
   font-size: 0;
-  position: absolute;
-  right: 5px;
-  top: 6px;
+  vertical-align: middle;
+  float: right;
   margin-right: 0;
   background-image: url("../img/sprite3.png");
   background-repeat: no-repeat;
   background-position: -265px -69px;
+  background-color: transparent;
   border: none;
+  position: absolute;
+  right: 4px;
+  top: 9px
 }
 
 .calendar:hover {
@@ -449,6 +478,10 @@ p.promo {
 .filters fieldset {
   border: none;
   padding: 0 0;
+  margin-left: 0;
+}
+fieldset.housing {
+  margin-left: 4px;
 }
 .filters legend {
   margin-bottom: 25px;
@@ -534,13 +567,13 @@ margin-bottom: 0;
   width: 328px;
 }
 .rangerprice-label {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
   font-weight: bold;;
   font-size: 16px;
   line-height: 21px;
 }
 .rangerprice-value {
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   margin-left: 10px;
   font-size: 0;
@@ -562,14 +595,20 @@ margin-bottom: 0;
 .rangerprice-value label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 21px;
   vertical-align: top;
   cursor: pointer;
 }
-.rangerprice-value .min-price,
-.rangerprice-value .max-price {
+.rangerprice-value .min-price {
   width: 90px;
   padding-left: 65px;
+  margin-top: 4px;
+}
+
+.rangerprice-value .max-price {
+  width: 90px;
+  padding-left: 57px;
+  margin-top: 4px;
 }
 .rangerprice-value input {
   width: 50px;
@@ -622,7 +661,7 @@ margin-bottom: 0;
   margin-right: 94px;
   margin-left: 94px;
   padding: 6px 35px;
-
+  width: 64px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -654,6 +693,7 @@ margin-bottom: 0;
   font-weight: bold;
   color: #000000;
   margin-right: 28px;
+  margin-bottom: 6px;
 }
 .sortings-title {
   display: inline-block;
@@ -726,13 +766,14 @@ border-bottom: 11px solid #81b3d2;
 .hotels {
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 30px;
+  padding-top: 28px;
   padding-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
 }
 .hotels-img {
   float: left;
   width: 135px;
+  margin-top: 2px;
 }
 .hotels-details {
   float:left;
@@ -765,7 +806,7 @@ h2.hotels-name {
 .hotels-type {
   display: inline-block;
   width: 110px;
-  margin-right: 6px;
+
 }
 .hotels-rating {
   float: right;
@@ -815,6 +856,7 @@ h2.hotels-name {
   padding-left: 17px;
   padding-right: 17px;
   margin-right: 2px;
+  margin-top: 3px;
 }
 .info-btn:hover {
   background-color: #669ec0;
