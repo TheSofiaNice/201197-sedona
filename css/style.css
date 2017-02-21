@@ -1,5 +1,4 @@
 body {
-
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -7,14 +6,19 @@ body {
   font-family: "PT Sans", "Arial", serif;
   text-transform: uppercase;
   position: relative;
+  background-color: #f2f2f2;
 }
-
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 5px #e4e4e4;
+}
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
   height: 0;
-
 }
 .main-header {
   position: relative;
@@ -70,7 +74,6 @@ a.logo {
 .main-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
-
 .title {
   text-align: center;
   height: 508px;
@@ -93,11 +96,13 @@ a.logo {
 }
 .subject p {
   text-align: center;
+  margin-bottom: 0;
 }
 p.slogan {
-font-size: 21px;
-line-height: 26px;
-font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 .reasons {
   width: 1200px;
@@ -105,6 +110,13 @@ font-weight: bold;
   background-color: #eeeeee;
 }
 .reasons-item {
+  float: left;
+  width: 400px;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 48px;
+}
+.main-reasons {
   float: left;
   width: 400px;
   min-height: 200px;
@@ -136,14 +148,19 @@ h2.reasons-name {
   padding-left: 120px;
   padding-right: 120px;
   margin-top: 0;
+  margin-bottom: 25px;
 }
-
+.reasons-number {
+  margin-bottom: 20px;
+}
 b.feautures-name {
+  display: inline-block;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   font-weight: bold;
   margin-top: 0;
+  margin-bottom: 13px;
 }
 .features-description {
   text-align: center;
@@ -158,6 +175,7 @@ b.feautures-name {
   float: right;
   width: 800px;
   min-height: 256px;
+  line-height: 0;
 }
 .bridge .reasons-images {
   float: left;
@@ -182,14 +200,12 @@ b.feautures-name {
   background: url("../img/sprite3.png") no-repeat;
   display: block;
 }
-
 .pic {
-display: block;
-margin-left: auto;
-margin-right: auto;
-margin-top: 58px;
-margin-bottom: 30px;
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 58px;
+  margin-bottom: 30px;
 }
 .pic-house {
   width: 75px;
@@ -209,7 +225,7 @@ margin-bottom: 30px;
 .search-hotel {
   position: relative;
   width: 568px;
-  min-height: 290px;
+  height: 290px;
   margin: 0 auto;
   padding-top: 0px;
 }
@@ -228,7 +244,7 @@ p.promo {
   color: #000000;
   font-weight: bold;
   padding-top: 56px;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 .btn {
   font-size: 21px;
@@ -257,11 +273,21 @@ p.promo {
   padding: 55px 55px;
   background-color: #ffffff;
 }
+.search-hotel ::-webkit-input-placeholder {
+  font-weight: bold; color: #000000;
+}
+.search-hotel ::-moz-placeholder  {
+  font-weight: bold; color: #000000;}
+.search-hotel :-moz-placeholder {
+  font-weight: bold; color: #000000;}
+.search-hotel :-ms-input-placeholder  {
+  font-weight: bold; color: #000000;}
 .search-btn {
   display: block;
   text-align: center;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-top: 25px;
 }
 .search-btn:hover {
   background-color: #669ec0;
@@ -275,10 +301,11 @@ p.promo {
   display: inline-block;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   background-color: #f2f2f2;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  position: relative;
 }
 .search-hotel label {
   font-size: 14px;
@@ -289,15 +316,13 @@ p.promo {
   width: 108px;
 }
 .search-hotel label.childs {
-    width: 60px;
+  width: 60px;
 }
-
 .adults {
   margin-right: 50px;
 }
 .form-field input[type="text"] {
   width: 280px;
-
   background: none;
   border: none;
   font-size: 14px;
@@ -324,9 +349,9 @@ p.promo {
   padding-bottom: 6px;
   background-color: #f2f2f2;
   margin-bottom: 30px;
-
+  position: relative;
+  font-size: 0;
 }
-
 .amount-field input[type="text"] {
   display: inline-block;
   width: 50px;
@@ -339,55 +364,46 @@ p.promo {
   font-weight: bold;
   font-family: "PT Sans", "Arial", serif;
   text-transform: uppercase;
-
-
-
 }
-
 .amount-field button {
-display: inline-block;
-border: none;
-width: 12px;
-height: 20px;
-font-size: 0;
-position: relative;
-bottom: 6px;
-margin-right: 0;
+  display: inline-block;
+  border: none;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  position: relative;
+  top: 5px;
+  margin-right: 0;
+  background-image: url("../img/sprite3.png");
+  background-repeat: no-repeat;
+  font-size: 0px;
 }
 
 .amount-field button::before {
-content: "";
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background-image: url("../img/sprite3.png");
-background-repeat: no-repeat;
-font-size: 0px;
-
-
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite3.png");
+  background-repeat: no-repeat;
+  font-size: 0px;
 }
 
-.amount-field button.minus::before{
-
+.amount-field button.minus::before {
   width: 12px;
   height: 3px;
   background-position: -10px -111px;
-
 }
-.amount-field button.minus:hover:before{
-
+.amount-field button.minus:hover:before {
   width: 12px;
   height: 3px;
   background-position: -74px -111px;
-
 }
-.amount-field button.minus:active:before{
-
+.amount-field button.minus:active:before {
   width: 12px;
   height: 3px;
   background-position: -42px -111px;
-
 }
 .amount-field button.plus::before {
   width: 11px;
@@ -400,36 +416,25 @@ font-size: 0px;
 .amount-field button.plus:active:before {
   background-position: -137px -111px;
 }
-
-
 .calendar {
   display: inline-block;
-  width: 37px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   font-size: 0;
-  position: relative;
-  bottom: 5px;
-  margin-right: 0;
-  border: none;
-
-}
-button.calendar::before{
-  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 21px;
-  height: 22px;
-  font-size: 0px;
+  right: 5px;
+  top: 6px;
+  margin-right: 0;
   background-image: url("../img/sprite3.png");
   background-repeat: no-repeat;
   background-position: -265px -69px;
+  border: none;
 }
-button.calendar:hover:before {
+
+.calendar:hover {
   background-position: -347px -69px;
 }
-button.calendar:active:before {
+.calendar:active {
   background-position: -306px -69px;
 }
 .filters {
@@ -440,12 +445,10 @@ button.calendar:active:before {
   padding-right: 72px;
   background: url("../img/background-inner.jpg") no-repeat;
   color: #ffffff;
-
 }
 .filters fieldset {
   border: none;
   padding: 0 0;
-
 }
 .filters legend {
   margin-bottom: 25px;
@@ -650,11 +653,14 @@ margin-bottom: 0;
   line-height: 26px;
   font-weight: bold;
   color: #000000;
-  margin-right: 31px;
+  margin-right: 28px;
 }
 .sortings-title {
   display: inline-block;
-  margin-right: 31px;
+  margin-right: 37px;
+  padding-top: 5px;
+  font-size: 12px;
+  line-height: 18px;
 }
 .sortings-btns {
   float: left;
@@ -662,12 +668,12 @@ margin-bottom: 0;
   padding-right: 28px;
 }
 .sortings-btn {
- font-size: 12px;
- line-height: 18px;
- margin-right: 31px;
- color: rgba(0, 0, 0, 0.3);
- text-decoration: none;
- border-bottom: 1px dotted #81b3d2;
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: 31px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
 }
 .sortings-btn:hover {
   color: #81b3d2;
@@ -716,15 +722,13 @@ border-bottom: 11px solid #81b3d2;
 .desc:active {
   border-top: 11px solid #81b3d2;
 }
-.search-results {
+
+.hotels {
   padding-left: 72px;
   padding-right: 72px;
-}
-.hotels {
-
-  padding-top: 31px;
-  padding-bottom: 31px;
-  
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .hotels-img {
   float: left;
@@ -747,6 +751,7 @@ h2.hotels-name {
 }
 .hotels-name a {
   text-decoration: none;
+  color: #000000;
 }
 .hotels-name a:hover {
   color: #81b3d2;
@@ -755,7 +760,7 @@ h2.hotels-name {
   color: rgba(0,0,0,0.3);
 }
 .hotels-type-price {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .hotels-type {
   display: inline-block;
@@ -776,11 +781,12 @@ margin-bottom: 10px;
 }
 .rating-value {
   position: absolute;
-  top: 65px;
+  bottom: 0px;
   right: 0px;
   background-color: #f2f2f2;
-  padding-right: 18px;
-  padding-left: 18px;
+  padding-right: 15px;
+  padding-left: 15px;
+
 }
 .amara-stars {
   width: 96px;
@@ -808,7 +814,7 @@ margin-bottom: 10px;
   padding-bottom: 3px;
   padding-left: 17px;
   padding-right: 17px;
-  margin-right: 6px;
+  margin-right: 2px;
 }
 .info-btn:hover {
   background-color: #669ec0;
@@ -839,27 +845,27 @@ margin-bottom: 10px;
 }
 
 .main-footer {
-  width: 100%;
-  min-height: 120px;
-}
-.main-footer .container {
+
+
   padding: 36px 72px;
   width: 1056px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .index-footer {
   position: absolute;
   bottom: 0;
-}
-.index-footer .container {
   background-color: rgba(255, 255, 255, 0.7);
 }
+
 .footer-hashtag {
   float: left;
-  width: 240px;
+  width: 237px;
   margin-right: 88px;
   text-align: center;
+  padding-top: 8px;
+  padding-left: 7px;
 }
 .footer-hashtag a {
  text-decoration: none;
@@ -871,15 +877,15 @@ margin-bottom: 10px;
 .footer-social {
   float: left;
   width: 275px;
-  padding-left: 125px;
+  padding-left: 120px;
 
 }
 .social-btn {
   display: inline-block;
   vertical-align: top;
-  margin-right: 6px;
-  width: 46px;
-  height: 49px;
+  margin-right: 5px;
+  width: 45px;
+  height: 48px;
   font-size: 0;
   background-color: #81b3d2;
   position: relative;
@@ -892,34 +898,34 @@ margin-bottom: 10px;
 }
 
 .social-btn::before {
-content: "";
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-background-image: url("../img/sprite3.png");
-background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite3.png");
+  background-repeat: no-repeat;
 }
 .social-btn:active:before {
-opacity: 0.3;
+  opacity: 0.3;
 }
 
 .social-btn-tw::before {
-width: 17px;
-height: 15px;
-background-position: -340px -111px;
+  width: 17px;
+  height: 15px;
+  background-position: -340px -111px;
 
 
 }
 .social-btn-fb::before  {
-width: 10px;
-height: 19px;
-background-position: -10px -52px;
+  width: 10px;
+  height: 19px;
+  background-position: -10px -52px;
 }
 .social-btn-yt::before {
-width: 20px;
-height: 16px;
-background-position: -340px -146px;
+  width: 20px;
+  height: 16px;
+  background-position: -340px -146px;
 }
 .footer-copyright {
   float: right;
@@ -934,6 +940,7 @@ background-position: -340px -146px;
   padding-left: 15px;
   padding-right: 5px;
   padding-top: 10px;
+
   }
 .footer-copyright a {
   display: inline-block;
